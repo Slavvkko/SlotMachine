@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SlotMachine</string>
+    <string name="button_spin">Spin</string>
+    <string name="no_balance">You don\'t have enough coins on balance</string>
+</resources>

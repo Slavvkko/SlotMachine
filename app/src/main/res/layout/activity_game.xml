@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/layoutMarginStart"
+        android:paddingEnd="@dimen/layoutMarginStart"
+        android:paddingTop="@dimen/layoutMarginTop"
+        android:paddingBottom="@dimen/layoutMarginTop">
+
+        <TextView
+            android:id="@+id/textBalance"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_balance_background"
+            android:gravity="center"
+            tools:text="100"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <com.hordiienko.slotmachine.game_surface.GameSurface
+            android:id="@+id/gameSurface"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/buttonGrid"
+                android:layout_width="80dp"
+                android:layout_height="46dp"
+                android:background="@drawable/but_bet_background"
+                android:src="@drawable/ic_grid_on_white_24dp" />
+
+            <Button
+                android:id="@+id/buttonBet"
+                android:layout_width="80dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/but_bet_background"
+                tools:text="20"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/buttonSpin"
+                android:layout_width="80dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/but_bet_background"
+                android:text="@string/button_spin"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
